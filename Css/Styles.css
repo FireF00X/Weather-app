@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    width: 350px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(45deg, #1E729E, #2A8DBE, #3CB7E6, #4FCFEF, #61D8F8);
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.card .search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.card .search input{
+    border: none;
+    outline: none;
+    font-size: large;
+    border-radius: 20px;
+    height: 40px;
+    width: 80%;
+    padding: 20px;
+}
+
+.card .search .error_text.hidden{
+    display: none;
+}
+
+.card .search .error_text{
+    display: block;
+    position: absolute;
+    font-size: 12px;
+    color: rgb(189, 2, 2);
+    font-weight: bold;
+    bottom: -32px;
+    left: 22px;
+}
+
+.card .search .search_icon{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.card .search .search_icon img{
+    width: 50%;
+    height: 50%;
+}
+
+.card .data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -27px;
+}
+
+.card .data .image{
+    position: relative;
+    width: 180px;
+    height: 180px;
+}
+
+.card .data .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.card .data .degree{
+    font-size: 50px;
+    font-weight: 700;
+    color: #e5e5ee;
+}
+
+.card .data .country{
+    font-size: 25px;
+    font-weight: 500;
+    color: #e5e5ee;
+}
+
+.card .exstra_data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.card .exstra_data .humidity{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+
+}
+.card .exstra_data .humidity .image{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+.card .exstra_data .humidity .image img{
+    width: 100%;
+    height: 100%;
+}
+.card .exstra_data .humidity .numbers{
+    color: #fff;
+}
+.card .exstra_data .humidity .numbers .percent{
+    margin: 0;
+    font-size: 25px;
+}
+.card .exstra_data .humidity .numbers .title{
+    font-size: 12px;
+    letter-spacing:1px;
+    margin:5px 0;
+}
+
+.card .exstra_data .wind{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+
+}
+.card .exstra_data .wind .image{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+.card .exstra_data .wind .image img{
+    width: 100%;
+    height: 100%;
+}
+.card .exstra_data .wind .numbers{
+    color: #fff;
+}
+.card .exstra_data .wind .numbers .percent{
+    margin: 0 ;
+    font-size: 25px;
+}
+.card .exstra_data .wind .numbers .title{
+    font-size: 12px;
+    letter-spacing:1px;
+    margin:5px 0;
+}

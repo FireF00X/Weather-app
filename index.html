@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css file -->
+    <link rel="stylesheet" href="./Css/Styles.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" class="city_name" placeholder="City Name ...">
+            <p class="error_text hidden">Please Enter Right City Name</p>
+            <div class="search_icon">
+                <img src="./Css/Images/search.png" alt="">
+            </div>
+        </div>
+        <div class="data">
+            <div class="image">
+                <img src="./Css/Images/clear.png" alt="">
+            </div>
+            <div class="degree">1°C</div>
+            <div class="country">Egypt</div>
+        </div>
+        <div class="exstra_data">
+            <div class="humidity">
+                <div class="image">
+                    <img src="./Css/Images/humidity.png" alt="">
+                </div>
+                <div class="numbers">
+                    <p class="percent">90%</p>
+                    <div class="title">Humidity</div>
+                </div>
+            </div>
+            <div class="wind">
+                <div class="image">
+                    <img src="./Css/Images/wind.png" alt="">
+                </div>
+                <div class="numbers">
+                    <p class="percent">268 km/hr</p>
+                    <div class="title">Wind</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./Js/main.js"></script>
+    <!-- api -->
+    <!-- https://api.openweathermap.org/data/2.5/weather?q=Egypt&appid=ab1fbce7731b929d65d8e0e329449d74 -->
+</body>
+</html>
